@@ -1,2 +1,2 @@
 # mycloud
-my spring-cloud
+我的spring-could样例项目
