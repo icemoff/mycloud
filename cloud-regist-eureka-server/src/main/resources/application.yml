@@ -13,7 +13,15 @@ eureka:
   instance:
     hostname: discovery
   client:
+    healthcheck:
+      enabled: true
+    # 单机模式 start
     registerWithEureka: false #不用将自己注册到Eureka
     fetchRegistry: false #不用发现Eureka中的服务
+    # 单机模式 end
     serviceUrl:
       defaultZone: http://myusername:pass123@${server.host}:${server.port}/eureka/
+  # 管理控制台配置
+  #dashboard:
+  #  enabled: true
+  #  path: /xxx

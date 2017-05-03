@@ -10,3 +10,7 @@ eureka:
       defaultZone: http://myusername:pass123@localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+    # eureka 元数据定义
+    metadata-map:
+      mydata: testxxxx
+    #appname: xx-name    覆盖 spring.application.name
